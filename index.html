@@ -11,10 +11,10 @@
 <link rel="stylesheet" href="style.css">
 <style>
   .hero{padding:24px 0 40px;}
-  .hero-top{display:flex; justify-content:space-between; align-items:flex-start; gap:32px; flex-wrap:wrap;}
+  .hero-top{display:flex; align-items:flex-start; gap:32px; flex-wrap:wrap;}
   .hero-text{flex:1; min-width:260px;}
   .photo{
-    width:132px; height:132px; border-radius:50%; overflow:hidden;
+    width:200px; height:260px; border-radius:4px; overflow:hidden;
     border:1px solid var(--rule); flex-shrink:0; background:#EFEBE1;
   }
   .photo img{width:100%; height:100%; object-fit:cover; display:block;}
@@ -48,7 +48,10 @@
   .edu-date{font-family:var(--mono); font-size:12.5px; color:var(--teal); padding-top:2px;}
   .edu-school{font-weight:600; font-size:15px;}
   .edu-detail{font-size:13.5px; color:var(--muted); margin-top:2px;}
-  @media (max-width:560px){.edu-item{grid-template-columns:1fr;}}
+  @media (max-width:560px){
+    .edu-item{grid-template-columns:1fr;}
+    .photo{width:150px; height:195px;}
+  }
 </style>
 </head>
 <body>
@@ -70,13 +73,13 @@
 
   <header class="hero">
     <div class="hero-top">
+      <div class="photo">
+        <img src="photo.jpg" alt="Swapnil Sharma">
+      </div>
       <div class="hero-text">
         <div class="eyebrow">Boston, MA</div>
         <h1>Swapnil Sharma</h1>
         <p class="role">Ph.D. Candidate in Econometrics &amp; Quantitative Economics, Boston College</p>
-      </div>
-      <div class="photo">
-        <img src="photo.jpg" alt="Swapnil Sharma">
       </div>
     </div>
     <p class="tagline">I am a Ph.D. Candidate in Econometrics and Quantitative Economics at Boston College. My research studies how credit markets, macro uncertainty, and monetary policy shocks shape the business cycle, using Bayesian time-series methods and structural models with financial frictions. I show that credit spread and uncertainty shocks are key drivers of short-run economic volatility, and that a meaningful share of monetary policy shocks is predictable from information the Fed and forecasters already hold.</p>
