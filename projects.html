@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Projects &amp; Certificates — Swapnil Sharma</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<style>
+  .project{margin-bottom:28px; padding-bottom:28px; border-bottom:1px solid var(--rule);}
+  .project:last-child{margin-bottom:0; padding-bottom:0; border-bottom:none;}
+  .project-title{font-family:var(--serif); font-weight:600; font-size:18px; color:var(--navy);}
+  .project-status{
+    display:inline-block; font-family:var(--mono); font-size:11px; text-transform:uppercase;
+    letter-spacing:0.06em; color:var(--teal); border:1px solid var(--teal); border-radius:3px;
+    padding:2px 8px; margin-top:8px;
+  }
+  .project-desc{margin-top:10px; font-size:14.5px; color:#3A3D42;}
+
+  .cert-item{display:grid; grid-template-columns:110px 1fr; gap:16px; margin-bottom:16px;}
+  .cert-item:last-child{margin-bottom:0;}
+  .cert-date{font-family:var(--mono); font-size:12.5px; color:var(--teal); padding-top:2px;}
+  .cert-name{font-weight:600; font-size:14.5px;}
+  .cert-note{font-size:13px; color:var(--muted); margin-top:2px;}
+
+  .award{font-size:14.5px; margin-bottom:8px; padding-left:16px; position:relative;}
+  .award:before{content:"—"; position:absolute; left:0; color:var(--teal);}
+
+  @media (max-width:560px){.cert-item{grid-template-columns:1fr;}}
+</style>
+</head>
+<body>
+
+<nav class="topnav">
+  <div class="nav-inner">
+    <a class="nav-name" href="index.html">Swapnil Sharma</a>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="research.html">Research</a>
+      <a href="teaching.html">Teaching</a>
+      <a href="projects.html" class="active">Projects &amp; Certificates</a>
+    </div>
+  </div>
+</nav>
+
+<main>
+<div class="wrap">
+
+  <header class="page-header">
+    <div class="eyebrow">Projects &amp; Certificates</div>
+    <h1>Applied Projects &amp; Coursework</h1>
+    <p class="page-intro">Work applying my econometrics background to markets, plus coursework and awards along the way.</p>
+  </header>
+
+  <section id="projects">
+    <div class="label">Current Project</div>
+    <div class="project">
+      <div class="project-title">Macro Signals as a Systematic Trading Overlay</div>
+      <span class="project-status">In Progress</span>
+      <p class="project-desc">Building on the working paper <em>"On the Macroeconomic Foundations of the Anomaly Zoo"</em> (O'Doherty, Wang, Yan), which estimates risk premia for 190 macro factors from FRED-QD and shows they explain CAPM anomalies as well as or better than standard benchmarks. This project pulls the same macro series, builds simplified regression-based mimicking portfolios against tradable factors (market, SMB, HML), and reframes the result as a macro-timing overlay — backtested with real portfolio construction, transaction costs, and risk-adjusted performance metrics (Sharpe, drawdown, turnover).</p>
+    </div>
+  </section>
+
+  <section id="certificates">
+    <div class="label">Certificates &amp; Coursework</div>
+    <div class="cert-item">
+      <div class="cert-date">In Progress</div>
+      <div>
+        <div class="cert-name">Option Pricing &amp; Mathematical Models — Coursera</div>
+        <div class="cert-note">Focused on quantitative finance methods relevant to market-making and derivatives pricing.</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="awards">
+    <div class="label">Awards</div>
+    <div class="award">Top 1% — IIT Joint Entrance Exam (IIT JEE), 2008</div>
+    <div class="award">Full scholarship and stipend, Boston College Ph.D. program (five years)</div>
+  </section>
+
+</div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p class="footer-text">Swapnil Sharma · Boston, MA · Updated 2026</p>
+  </div>
+</footer>
+
+</body>
+</html>

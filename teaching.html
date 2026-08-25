@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Teaching — Swapnil Sharma</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<style>
+  .job{display:grid; grid-template-columns:130px 1fr; gap:16px; margin-bottom:26px;}
+  .job:last-child{margin-bottom:0;}
+  .job-date{font-family:var(--mono); font-size:12.5px; color:var(--teal); padding-top:2px;}
+  .job-title{font-weight:600; font-size:15.5px;}
+  .job-org{font-size:14px; color:var(--muted); margin-bottom:6px;}
+  .job ul{padding-left:18px; font-size:14px; color:#3A3D42;}
+  .job li{margin-bottom:4px;}
+
+  .stat-row{display:flex; gap:28px; margin-top:10px; flex-wrap:wrap;}
+  .stat{font-family:var(--mono); font-size:12.5px; color:var(--muted);}
+  .stat strong{color:var(--navy); font-size:14px;}
+
+  .course-list{display:flex; flex-wrap:wrap; gap:8px; margin-top:6px;}
+  .course-tag{font-family:var(--mono); font-size:12.5px; padding:5px 10px; border:1px solid var(--rule); border-radius:3px; background:#FCFBF8;}
+
+  @media (max-width:560px){.job{grid-template-columns:1fr;}}
+</style>
+</head>
+<body>
+
+<nav class="topnav">
+  <div class="nav-inner">
+    <a class="nav-name" href="index.html">Swapnil Sharma</a>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="research.html">Research</a>
+      <a href="teaching.html" class="active">Teaching</a>
+      <a href="projects.html">Projects &amp; Certificates</a>
+    </div>
+  </div>
+</nav>
+
+<main>
+<div class="wrap">
+
+  <header class="page-header">
+    <div class="eyebrow">Teaching</div>
+    <h1>Teaching Experience</h1>
+    <p class="page-intro">I've taught and supported courses in macroeconomics, statistics, and econometrics at Boston College since 2019.</p>
+  </header>
+
+  <section id="teaching-fellow">
+    <div class="label">Teaching Fellow (Lecturer)</div>
+    <div class="job">
+      <div class="job-date">2024 — Present</div>
+      <div>
+        <div class="job-title">Undergraduate Macroeconomic Theory</div>
+        <div class="job-org">Boston College</div>
+        <ul>
+          <li>Designed and led multiple sections for 50+ students</li>
+        </ul>
+        <div class="stat-row">
+          <div class="stat">Course rating <strong>4.33/5</strong> (dept. avg. 4.19)</div>
+          <div class="stat">Instructor rating <strong>4.64/5</strong> (dept. avg. 4.41)</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="ta">
+    <div class="label">Teaching Assistant</div>
+    <div class="job">
+      <div class="job-date">2019 — 2024</div>
+      <div>
+        <div class="job-title">Discussion Sections &amp; Office Hours</div>
+        <div class="job-org">Boston College</div>
+        <ul>
+          <li>Led discussion sessions, held office hours, graded exams and assignments, and provided solutions and explanations across the courses below</li>
+        </ul>
+        <div class="course-list">
+          <span class="course-tag">Statistics</span>
+          <span class="course-tag">Econometrics</span>
+          <span class="course-tag">Time Series with Python</span>
+          <span class="course-tag">Principles of Economics</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p class="footer-text">Swapnil Sharma · Boston, MA · Updated 2026</p>
+  </div>
+</footer>
+
+</body>
+</html>

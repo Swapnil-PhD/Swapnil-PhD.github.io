@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Research — Swapnil Sharma</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<style>
+  .paper{margin-bottom:32px; padding-bottom:32px; border-bottom:1px solid var(--rule);}
+  .paper:last-child{margin-bottom:0; padding-bottom:0; border-bottom:none;}
+  .paper-title{font-family:var(--serif); font-weight:600; font-size:19px; color:var(--navy);}
+  .paper-coauthor{font-family:var(--mono); font-size:12px; color:var(--muted); margin-top:4px;}
+  .paper-desc{margin-top:10px; font-size:14.5px; color:#3A3D42;}
+
+  .job{display:grid; grid-template-columns:130px 1fr; gap:16px; margin-bottom:24px;}
+  .job:last-child{margin-bottom:0;}
+  .job-date{font-family:var(--mono); font-size:12.5px; color:var(--teal); padding-top:2px;}
+  .job-title{font-weight:600; font-size:15.5px;}
+  .job-org{font-size:14px; color:var(--muted); margin-bottom:6px;}
+  .job ul{padding-left:18px; font-size:14px; color:#3A3D42;}
+  .job li{margin-bottom:4px;}
+
+  .skill-group{margin-bottom:18px;}
+  .skill-group:last-child{margin-bottom:0;}
+  .skill-label{font-family:var(--mono); font-size:12px; color:var(--muted); text-transform:uppercase; letter-spacing:0.08em; margin-bottom:8px;}
+  .tags{display:flex; flex-wrap:wrap; gap:8px;}
+  .tag{font-family:var(--mono); font-size:12.5px; padding:5px 10px; border:1px solid var(--rule); border-radius:3px; color:var(--ink); background:#FCFBF8;}
+
+  @media (max-width:560px){.job{grid-template-columns:1fr;}}
+</style>
+</head>
+<body>
+
+<nav class="topnav">
+  <div class="nav-inner">
+    <a class="nav-name" href="index.html">Swapnil Sharma</a>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="research.html" class="active">Research</a>
+      <a href="teaching.html">Teaching</a>
+      <a href="projects.html">Projects &amp; Certificates</a>
+    </div>
+  </div>
+</nav>
+
+<main>
+<div class="wrap">
+
+  <header class="page-header">
+    <div class="eyebrow">Research</div>
+    <h1>Working Papers &amp; Research Experience</h1>
+    <p class="page-intro">My research uses Bayesian time-series and structural methods to study credit markets, macro uncertainty, and monetary policy transmission.</p>
+  </header>
+
+  <section id="papers">
+    <div class="label">Working Papers</div>
+
+    <div class="paper">
+      <div class="paper-title">Credit Market, Uncertainty, and Business Cycle</div>
+      <p class="paper-desc">Applies Bayesian Vector Autoregression to labor market dynamics, showing that omitting credit spreads and macro uncertainty misses key cyclical features — these shocks explain 38% and 32% of short-run volatility, respectively. Credit spread shocks generate boom-bust cycles while uncertainty shocks produce smoother recoveries; a structural DGE model with financial frictions reproduces and explains both patterns.</p>
+    </div>
+
+    <div class="paper">
+      <div class="paper-title">Monetary Policy Surprise and Forward Information</div>
+      <p class="paper-desc">Shows that roughly 10% of high-frequency policy shocks can be predicted from forward information already held by the Fed and forecasters, challenging the assumption that these shocks are fully unexpected. Constructs a new shock series orthogonal to forward information and finds materially larger, more statistically significant real effects than earlier high-frequency studies report.</p>
+    </div>
+
+    <div class="paper">
+      <div class="paper-title">Non-Banking Loans and Monetary Policy Transmission in India</div>
+      <div class="paper-coauthor">with Shashwat Agarwal</div>
+      <p class="paper-desc">Uses loan-level data on banks and non-banks in India to show that contractionary monetary policy reduces bank lending but increases non-bank lending, offsetting the intended policy effect by roughly 30%.</p>
+    </div>
+  </section>
+
+  <section id="experience">
+    <div class="label">Research Experience</div>
+
+    <div class="job">
+      <div class="job-date">2024 — Present</div>
+      <div>
+        <div class="job-title">Research Statistician (Consultant)</div>
+        <div class="job-org">Boston College, Research Services</div>
+        <ul>
+          <li>Automated extraction and structuring of data from 1,000+ scanned Hindi PDFs into analysis-ready datasets</li>
+          <li>Applied ML methods to extract structured, privacy-safe transaction data from 3,000+ heterogeneous credit card statements</li>
+          <li>Consulted on 10+ academic projects across data acquisition, cleaning, and modeling</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="job">
+      <div class="job-date">Summer 2022</div>
+      <div>
+        <div class="job-title">Computational Research Assistant</div>
+        <div class="job-org">to Prof. Theodore Papageorgiou, Boston College</div>
+        <ul>
+          <li>Developed and optimized Python algorithms for a high-dimensional fixed-point problem in a macro-labor equilibrium model</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="job">
+      <div class="job-date">Summer 2017</div>
+      <div>
+        <div class="job-title">Intern, Foreign Exchange Department</div>
+        <div class="job-org">Reserve Bank of India</div>
+        <ul>
+          <li>Supported assessment of a $150M External Commercial Borrowing for FEMA compliance</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <div class="label">Technical Skills</div>
+    <div class="skill-group">
+      <div class="skill-label">Programming</div>
+      <div class="tags">
+        <span class="tag">Python (Pandas / NumPy)</span>
+        <span class="tag">MATLAB</span>
+        <span class="tag">Stata</span>
+        <span class="tag">Julia</span>
+        <span class="tag">SQL</span>
+      </div>
+    </div>
+    <div class="skill-group">
+      <div class="skill-label">Methods</div>
+      <div class="tags">
+        <span class="tag">Econometrics</span>
+        <span class="tag">Time Series</span>
+        <span class="tag">Bayesian VAR</span>
+        <span class="tag">Optimization</span>
+        <span class="tag">Machine Learning (scikit-learn, XGBoost)</span>
+        <span class="tag">Statistical &amp; Mathematical Modeling</span>
+        <span class="tag">Game Theory</span>
+      </div>
+    </div>
+  </section>
+
+</div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p class="footer-text">Swapnil Sharma · Boston, MA · Updated 2026</p>
+  </div>
+</footer>
+
+</body>
+</html>
