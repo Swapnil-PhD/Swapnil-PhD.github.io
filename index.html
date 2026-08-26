@@ -11,11 +11,10 @@
 <link rel="stylesheet" href="style.css">
 <style>
   .hero{padding:24px 0 40px;}
-  .hero-top{display:flex; align-items:flex-start; gap:32px; flex-wrap:wrap;}
-  .hero-text{flex:1; min-width:260px;}
+  .hero-top{display:grid; grid-template-columns:220px 1fr; gap:36px; align-items:start;}
   .photo{
-    width:200px; height:260px; border-radius:4px; overflow:hidden;
-    border:1px solid var(--rule); flex-shrink:0; background:#EFEBE1;
+    width:220px; height:280px; border-radius:4px; overflow:hidden;
+    border:1px solid var(--rule); background:#EFEBE1;
   }
   .photo img{width:100%; height:100%; object-fit:cover; display:block;}
   .role{font-family:var(--serif); font-size:clamp(17px, 2.4vw, 20px); color:var(--muted); margin-top:8px; font-style:italic;}
@@ -48,9 +47,11 @@
   .edu-date{font-family:var(--mono); font-size:12.5px; color:var(--teal); padding-top:2px;}
   .edu-school{font-weight:600; font-size:15px;}
   .edu-detail{font-size:13.5px; color:var(--muted); margin-top:2px;}
-  @media (max-width:560px){
+  @media (max-width:640px){
     .edu-item{grid-template-columns:1fr;}
-    .photo{width:150px; height:195px;}
+    .hero-top{grid-template-columns:1fr; justify-items:center; text-align:center;}
+    .photo{width:180px; height:230px;}
+    .contacts{justify-content:center;}
   }
 </style>
 </head>
@@ -80,25 +81,26 @@
         <div class="eyebrow">Boston, MA</div>
         <h1>Swapnil Sharma</h1>
         <p class="role">Ph.D. Candidate in Econometrics &amp; Quantitative Economics, Boston College</p>
+
+        <p class="tagline">I am a Ph.D. Candidate in Econometrics and Quantitative Economics at Boston College. My research studies how credit markets, macro uncertainty, and monetary policy shocks shape the business cycle, using Bayesian time-series methods and structural models with financial frictions. I show that credit spread and uncertainty shocks are key drivers of short-run economic volatility, and that a meaningful share of monetary policy shocks is predictable from information the Fed and forecasters already hold.</p>
+        <p class="tagline">Before my PhD, I worked as an Assistant Manager in R&amp;D at Hero MotoCorp, and interned in the Foreign Exchange Department at the Reserve Bank of India.</p>
+        <p class="job-market">I am on the job market for the 2026–2027 academic year.</p>
+
+        <svg class="chart" viewBox="0 0 420 90" aria-hidden="true">
+          <line class="baseline" x1="0" y1="60" x2="420" y2="60"/>
+          <path d="M0,55 C 20,50 35,30 55,32 C 80,35 95,70 120,72 C 145,74 160,25 185,20 C 210,16 225,55 250,58 C 275,60 290,38 315,35 C 340,32 355,50 380,48 C 400,47 410,42 420,40"/>
+        </svg>
+
+        <div class="contacts">
+          <a href="mailto:swapnil.sharma@bc.edu">swapnil.sharma@bc.edu</a>
+          <a href="http://linkedin.com/in/swapnilsharmaphd" target="_blank">LinkedIn</a>
+          <a href="https://github.com/Swapnil-PhD" target="_blank">GitHub</a>
+          <a href="https://scholar.google.com/citations?hl=en&user=rOOCBhIAAAAJ&view_op=list_works&authuser=2" target="_blank">Google Scholar</a>
+        </div>
+
+        <a class="cv-link" href="cv.pdf" target="_blank">Download CV (PDF) →</a>
       </div>
     </div>
-    <p class="tagline">I am a Ph.D. Candidate in Econometrics and Quantitative Economics at Boston College. My research studies how credit markets, macro uncertainty, and monetary policy shocks shape the business cycle, using Bayesian time-series methods and structural models with financial frictions. I show that credit spread and uncertainty shocks are key drivers of short-run economic volatility, and that a meaningful share of monetary policy shocks is predictable from information the Fed and forecasters already hold.</p>
-    <p class="tagline">I am currently applying this quantitative toolkit to markets, building macro-timing signals and backtested trading strategies. Before my PhD, I worked as an Assistant Manager in R&amp;D at Hero MotoCorp, and interned in the Foreign Exchange Department at the Reserve Bank of India.</p>
-    <p class="job-market">I am on the job market for the 2026–2027 academic year.</p>
-
-    <svg class="chart" viewBox="0 0 420 90" aria-hidden="true">
-      <line class="baseline" x1="0" y1="60" x2="420" y2="60"/>
-      <path d="M0,55 C 20,50 35,30 55,32 C 80,35 95,70 120,72 C 145,74 160,25 185,20 C 210,16 225,55 250,58 C 275,60 290,38 315,35 C 340,32 355,50 380,48 C 400,47 410,42 420,40"/>
-    </svg>
-
-    <div class="contacts">
-      <a href="mailto:swapnil.sharma@bc.edu">swapnil.sharma@bc.edu</a>
-      <a href="http://linkedin.com/in/swapnilsharmaphd" target="_blank">LinkedIn</a>
-      <a href="https://github.com/Swapnil-PhD" target="_blank">GitHub</a>
-      <a href="https://scholar.google.com/citations?hl=en&user=rOOCBhIAAAAJ&view_op=list_works&authuser=2" target="_blank">Google Scholar</a>
-    </div>
-
-    <a class="cv-link" href="cv.pdf" target="_blank">Download CV (PDF) →</a>
   </header>
 
   <section id="education">
