@@ -3,55 +3,55 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Swapnil Sharma — Econometrics &amp; Quantitative Research</title>
+<title>Swapnil Sharma | Econometrics &amp; Quantitative Research</title>
 <meta name="description" content="Swapnil Sharma, Ph.D. Candidate in Econometrics and Quantitative Economics at Boston College.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 <style>
-  .hero{padding:24px 0 40px;}
-  .hero-top{display:grid; grid-template-columns:220px 1fr; gap:36px; align-items:start;}
+  .hero{
+    padding:64px 0 56px;
+    display:grid; grid-template-columns:320px 1fr; gap:56px; align-items:center;
+  }
   .photo{
-    width:220px; height:280px; border-radius:4px; overflow:hidden;
-    border:1px solid var(--rule); background:#EFEBE1;
+    width:100%; aspect-ratio:4/5; border-radius:8px; overflow:hidden;
+    background:var(--tint);
+    box-shadow:0 1px 2px rgba(21,24,29,0.06), 0 12px 32px -12px rgba(21,24,29,0.25);
   }
-  .photo img{width:100%; height:100%; object-fit:cover; display:block;}
-  .role{font-family:var(--serif); font-size:clamp(17px, 2.4vw, 20px); color:var(--muted); margin-top:8px; font-style:italic;}
-  .tagline{margin-top:20px; max-width:56ch; font-size:16px; color:#3A3D42;}
-  .chart{margin-top:30px; width:100%; max-width:420px;}
-  .chart path{
-    fill:none; stroke:var(--teal); stroke-width:1.6; stroke-linecap:round; stroke-linejoin:round;
-    stroke-dasharray:600; stroke-dashoffset:600; animation:draw 2.2s ease-out forwards;
-  }
-  .chart .baseline{stroke:var(--rule); stroke-width:1; stroke-dasharray:none; animation:none;}
-  @keyframes draw{to{stroke-dashoffset:0;}}
-  @media (prefers-reduced-motion:reduce){.chart path{animation:none; stroke-dashoffset:0;}}
+  .photo img{width:100%; height:100%; object-fit:cover; object-position:50% 30%; display:block;}
 
-  .contacts{margin-top:28px; display:flex; flex-wrap:wrap; gap:16px; font-family:var(--mono); font-size:13px;}
-  .contacts a{border-bottom:1px solid rgba(31,58,86,0.25);}
-  .cv-link{
-    display:inline-block; margin-top:26px; font-family:var(--mono); font-size:13px;
-    padding:9px 16px; border:1px solid var(--navy); color:var(--navy); border-bottom:1px solid var(--navy);
+  .hero h1{font-size:clamp(36px, 5.5vw, 54px);}
+  .role{font-family:var(--serif); font-size:clamp(18px, 2.4vw, 21px); color:var(--body); margin-top:12px;}
+  .affil{font-size:15px; color:var(--muted); margin-top:4px;}
+  .jm-badge{
+    display:inline-flex; align-items:center; gap:8px; margin-top:20px;
+    font-size:14px; font-weight:600; color:var(--teal);
+    padding:6px 14px; border-radius:999px; background:rgba(63,107,98,0.1);
   }
-  .cv-link:hover{background:var(--navy); color:var(--paper);}
+  .jm-badge::before{content:""; width:8px; height:8px; border-radius:50%; background:var(--teal);}
+  .actions{margin-top:24px; display:flex; flex-wrap:wrap; gap:10px;}
+  .actions a{border-bottom-width:1px;}
 
-  .tagline + .tagline{margin-top:14px;}
-  .job-market{
-    margin-top:18px; max-width:56ch; font-size:15px; font-weight:600; color:var(--navy);
-    padding:10px 14px; border-left:2px solid var(--teal); background:#F0EDE4;
+  .about p{max-width:68ch; font-size:16.5px; color:var(--body);}
+  .about p + p{margin-top:14px;}
+  .fields{display:flex; flex-wrap:wrap; gap:8px; margin-top:22px;}
+  .field{font-size:13.5px; padding:5px 12px; border:1px solid var(--rule); border-radius:999px; background:var(--surface); color:var(--ink);}
+
+  .edu-item{display:grid; grid-template-columns:120px 1fr; gap:20px; padding:14px 0; border-bottom:1px solid var(--rule);}
+  .edu-item:first-of-type{padding-top:0;}
+  .edu-item:last-child{border-bottom:none; padding-bottom:0;}
+  .edu-date{font-family:var(--mono); font-size:13px; color:var(--teal); padding-top:2px;}
+  .edu-school{font-weight:600; font-size:16px;}
+  .edu-detail{font-size:14px; color:var(--muted); margin-top:2px;}
+
+  @media (max-width:760px){
+    .hero{grid-template-columns:1fr; gap:32px; padding-top:40px; text-align:center;}
+    .photo{max-width:260px; margin:0 auto;}
+    .actions{justify-content:center;}
   }
-
-  .edu-item{display:grid; grid-template-columns:110px 1fr; gap:16px; margin-bottom:18px;}
-  .edu-item:last-child{margin-bottom:0;}
-  .edu-date{font-family:var(--mono); font-size:12.5px; color:var(--teal); padding-top:2px;}
-  .edu-school{font-weight:600; font-size:15px;}
-  .edu-detail{font-size:13.5px; color:var(--muted); margin-top:2px;}
-  @media (max-width:640px){
-    .edu-item{grid-template-columns:1fr;}
-    .hero-top{grid-template-columns:1fr; justify-items:center; text-align:center;}
-    .photo{width:180px; height:230px;}
-    .contacts{justify-content:center;}
+  @media (max-width:560px){
+    .edu-item{grid-template-columns:1fr; gap:2px;}
   }
 </style>
 </head>
@@ -73,68 +73,70 @@
 <div class="wrap">
 
   <header class="hero">
-    <div class="hero-top">
-      <div class="photo">
-        <img src="photo.jpg" alt="Swapnil Sharma">
-      </div>
-      <div class="hero-text">
-        <div class="eyebrow">Boston, MA</div>
-        <h1>Swapnil Sharma</h1>
-        <p class="role">Ph.D. Candidate in Econometrics &amp; Quantitative Economics, Boston College</p>
-
-        <p class="tagline">I am a Ph.D. Candidate in Econometrics and Quantitative Economics at Boston College. My research studies how credit markets, macro uncertainty, and monetary policy shocks shape the business cycle, using Bayesian time-series methods and structural models with financial frictions. I show that credit spread and uncertainty shocks are key drivers of short-run economic volatility, and that a meaningful share of monetary policy shocks is predictable from information the Fed and forecasters already hold.</p>
-        <p class="tagline">Before my PhD, I worked as an Assistant Manager in R&amp;D at Hero MotoCorp, and interned in the Foreign Exchange Department at the Reserve Bank of India.</p>
-        <p class="job-market">I am on the job market for the 2026–2027 academic year.</p>
-
-        <svg class="chart" viewBox="0 0 420 90" aria-hidden="true">
-          <line class="baseline" x1="0" y1="60" x2="420" y2="60"/>
-          <path d="M0,55 C 20,50 35,30 55,32 C 80,35 95,70 120,72 C 145,74 160,25 185,20 C 210,16 225,55 250,58 C 275,60 290,38 315,35 C 340,32 355,50 380,48 C 400,47 410,42 420,40"/>
-        </svg>
-
-        <div class="contacts">
-          <a href="mailto:swapnil.sharma@bc.edu">swapnil.sharma@bc.edu</a>
-          <a href="http://linkedin.com/in/swapnilsharmaphd" target="_blank">LinkedIn</a>
-          <a href="https://github.com/Swapnil-PhD" target="_blank">GitHub</a>
-          <a href="https://scholar.google.com/citations?hl=en&user=rOOCBhIAAAAJ&view_op=list_works&authuser=2" target="_blank">Google Scholar</a>
-        </div>
-
-        <a class="cv-link" href="cv.pdf" target="_blank">Download CV (PDF) →</a>
+    <div class="photo">
+      <img src="photo-web.jpg" alt="Portrait of Swapnil Sharma" width="900" height="878">
+    </div>
+    <div class="hero-text">
+      <h1>Swapnil Sharma</h1>
+      <p class="role">Ph.D. Candidate in Econometrics &amp; Quantitative Economics</p>
+      <p class="affil">Department of Economics, Boston College · Boston, MA</p>
+      <div class="jm-badge">On the job market, 2026–2027</div>
+      <div class="actions">
+        <a class="btn btn-primary" href="cv.pdf" target="_blank" rel="noopener">Download CV</a>
+        <a class="btn" href="mailto:sharmasy@bc.edu">Email</a>
+        <a class="btn" href="https://scholar.google.com/citations?hl=en&user=rOOCBhIAAAAJ&view_op=list_works&authuser=2" target="_blank" rel="noopener">Google Scholar</a>
+        <a class="btn" href="https://linkedin.com/in/swapnilsharmaphd" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="btn" href="https://github.com/Swapnil-PhD" target="_blank" rel="noopener">GitHub</a>
       </div>
     </div>
   </header>
 
+  <section class="about" id="about">
+    <h2 class="label">About</h2>
+    <p>I am a Ph.D. candidate in economics at Boston College, specializing in econometrics and quantitative macroeconomics. I am on the job market in 2026–2027.</p>
+    <p>My research looks at how credit markets, macroeconomic uncertainty, and monetary policy move the business cycle. I use Bayesian time-series methods and structural models with financial frictions. In my job market paper, I find that credit spread shocks and uncertainty shocks explain 38% and 32% of short-run volatility. In other work, I show that about 10% of high-frequency monetary policy surprises can be predicted from information the Fed and forecasters already had.</p>
+    <p>At Boston College, I teach undergraduate macroeconomic theory as a Teaching Fellow. I also work as a research statistician for Research Services, where I turn scanned records and credit card statements into datasets researchers can use. Before the Ph.D., I was an Assistant Manager in R&amp;D at Hero MotoCorp and an intern in the Foreign Exchange Department of the Reserve Bank of India.</p>
+    <div class="fields">
+      <span class="field">Macroeconomics</span>
+      <span class="field">Applied Econometrics</span>
+      <span class="field">Monetary Economics</span>
+      <span class="field">Bayesian Time Series</span>
+      <span class="field">Financial Frictions</span>
+    </div>
+  </section>
+
   <section id="education">
-    <div class="label">Education</div>
+    <h2 class="label">Education</h2>
     <div class="edu-item">
       <div class="edu-date">Exp. Dec 2026</div>
       <div>
-        <div class="edu-school">Ph.D. in Economics — Boston College</div>
+        <div class="edu-school">Ph.D. in Economics, Boston College</div>
         <div class="edu-detail">Econometrics &amp; Quantitative Economics</div>
       </div>
     </div>
     <div class="edu-item">
       <div class="edu-date">May 2021</div>
       <div>
-        <div class="edu-school">M.A. in Economics — Boston College</div>
-        <div class="edu-detail">GPA 3.89/4 · GRE Math 170/170</div>
+        <div class="edu-school">M.A. in Economics, Boston College</div>
+        <div class="edu-detail">GPA 3.89/4</div>
       </div>
     </div>
     <div class="edu-item">
       <div class="edu-date">Jul 2019</div>
-      <div><div class="edu-school">M.Phil. in Economics — IGIDR, Mumbai</div></div>
+      <div><div class="edu-school">M.Phil. in Economics, IGIDR, Mumbai</div></div>
     </div>
     <div class="edu-item">
       <div class="edu-date">May 2018</div>
       <div>
-        <div class="edu-school">M.Sc. in Economics — IGIDR, Mumbai</div>
-        <div class="edu-detail">GPA 3.64/4 · Rank 2/30</div>
+        <div class="edu-school">M.Sc. in Economics, IGIDR, Mumbai</div>
+        <div class="edu-detail">GPA 3.64/4</div>
       </div>
     </div>
     <div class="edu-item">
       <div class="edu-date">May 2012</div>
       <div>
-        <div class="edu-school">B.Tech in Mechanical Engineering — IIT (BHU), Varanasi</div>
-        <div class="edu-detail">GPA 7.45/10 · Rank 6/72</div>
+        <div class="edu-school">B.Tech in Mechanical Engineering, IIT (BHU), Varanasi</div>
+        <div class="edu-detail">GPA 7.45/10</div>
       </div>
     </div>
   </section>
