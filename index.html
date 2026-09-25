@@ -30,12 +30,17 @@
     padding:6px 14px; border-radius:999px; background:rgba(63,107,98,0.1);
   }
   .jm-badge::before{content:""; width:8px; height:8px; border-radius:50%; background:var(--teal);}
+  .jm-email{margin-top:10px; font-size:15px; color:var(--muted);}
+  .jm-email a{color:var(--body); border-bottom:1px solid var(--line);}
   .actions{margin-top:24px; display:flex; flex-wrap:wrap; gap:10px;}
   .actions a{border-bottom-width:1px;}
 
   .about p{max-width:68ch; font-size:16.5px; color:var(--body);}
   .about p + p{margin-top:14px;}
-  .fields{display:flex; flex-wrap:wrap; gap:8px; margin-top:22px;}
+  .focus-group{margin-top:22px;}
+  .focus-group + .focus-group{margin-top:16px;}
+  .focus-label{font-family:var(--mono); font-size:12px; color:var(--muted); text-transform:uppercase; letter-spacing:0.08em; margin-bottom:8px;}
+  .fields{display:flex; flex-wrap:wrap; gap:8px;}
   .field{font-size:13.5px; padding:5px 12px; border:1px solid var(--rule); border-radius:999px; background:var(--surface); color:var(--ink);}
 
   .edu-item{display:grid; grid-template-columns:120px 1fr; gap:20px; padding:14px 0; border-bottom:1px solid var(--rule);}
@@ -64,7 +69,7 @@
       <a href="index.html" class="active">Home</a>
       <a href="research.html">Research</a>
       <a href="teaching.html">Teaching</a>
-      <a href="projects.html">Projects &amp; Certificates</a>
+      <a href="projects.html">Misc.</a>
     </div>
   </div>
 </nav>
@@ -81,9 +86,9 @@
       <p class="role">Ph.D. Candidate in Econometrics &amp; Quantitative Economics</p>
       <p class="affil">Department of Economics, Boston College · Boston, MA</p>
       <div class="jm-badge">On the job market, 2026–2027</div>
+      <div class="jm-email">Email: <a href="mailto:sharmasy@bc.edu">sharmasy@bc.edu</a></div>
       <div class="actions">
         <a class="btn btn-primary" href="cv.pdf" target="_blank" rel="noopener">Download CV</a>
-        <a class="btn" href="mailto:sharmasy@bc.edu">Email</a>
         <a class="btn" href="https://scholar.google.com/citations?hl=en&user=rOOCBhIAAAAJ&view_op=list_works&authuser=2" target="_blank" rel="noopener">Google Scholar</a>
         <a class="btn" href="https://linkedin.com/in/swapnilsharmaphd" target="_blank" rel="noopener">LinkedIn</a>
         <a class="btn" href="https://github.com/Swapnil-PhD" target="_blank" rel="noopener">GitHub</a>
@@ -93,15 +98,25 @@
 
   <section class="about" id="about">
     <h2 class="label">About</h2>
-    <p>I am a Ph.D. candidate in economics at Boston College, specializing in econometrics and quantitative macroeconomics. I am on the job market in 2026–2027.</p>
-    <p>My research looks at how credit markets, macroeconomic uncertainty, and monetary policy move the business cycle. I use Bayesian time-series methods and structural models with financial frictions. In my job market paper, I find that credit spread shocks and uncertainty shocks explain 38% and 32% of short-run volatility. In other work, I show that about 10% of high-frequency monetary policy surprises can be predicted from information the Fed and forecasters already had.</p>
-    <p>At Boston College, I teach undergraduate macroeconomic theory as a Teaching Fellow. I also work as a research statistician for Research Services, where I turn scanned records and credit card statements into datasets researchers can use. Before the Ph.D., I was an Assistant Manager in R&amp;D at Hero MotoCorp and an intern in the Foreign Exchange Department of the Reserve Bank of India.</p>
-    <div class="fields">
-      <span class="field">Macroeconomics</span>
-      <span class="field">Applied Econometrics</span>
-      <span class="field">Monetary Economics</span>
-      <span class="field">Bayesian Time Series</span>
-      <span class="field">Financial Frictions</span>
+    <p>I am a Ph.D. candidate in Economics at Boston College, specializing in econometrics and quantitative macroeconomics. I am on the job market for the 2026–2027 academic year.</p>
+    <p>My research studies how information, uncertainty, and credit-market conditions shape aggregate fluctuations. My job market paper shows that the movement responsible for most business-cycle variation in hours combines two forces: macro uncertainty, which produces a broad contraction, and credit-market sentiment, which produces an expansion followed by a reversal. I develop and estimate a structural model with financial frictions that accounts for these distinct dynamics.</p>
+    <p>My other work examines forward information in high-frequency monetary policy surprises and the difficulty DSGE models have in matching labor- and capital-market dynamics jointly. Methodologically, I combine Bayesian time-series analysis with nonlinear structural models, global solution methods, and neural networks.</p>
+    <div class="focus-group">
+      <div class="focus-label">Research Areas</div>
+      <div class="fields">
+        <span class="field">Macroeconomics</span>
+        <span class="field">Monetary Economics</span>
+        <span class="field">Information Economics</span>
+        <span class="field">Applied Econometrics</span>
+      </div>
+    </div>
+    <div class="focus-group">
+      <div class="focus-label">Methods</div>
+      <div class="fields">
+        <span class="field">Bayesian Time Series</span>
+        <span class="field">Global Solution Methods</span>
+        <span class="field">Neural Networks and Machine Learning</span>
+      </div>
     </div>
   </section>
 
