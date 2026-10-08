@@ -9,22 +9,22 @@
 <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 <style>
-  .job{display:grid; grid-template-columns:130px 1fr; gap:16px; margin-bottom:26px;}
-  .job:last-child{margin-bottom:0;}
-  .job-date{font-family:var(--mono); font-size:12.5px; color:var(--teal); padding-top:2px;}
-  .job-title{font-weight:600; font-size:15.5px;}
-  .job-org{font-size:14px; color:var(--muted); margin-bottom:6px;}
-  .job ul{padding-left:18px; font-size:14px; color:#3A3D42;}
-  .job li{margin-bottom:4px;}
+  .teaching-group{margin-bottom:28px;}
+  .teaching-group:last-child{margin-bottom:0;}
+  .teaching-heading{display:flex; align-items:baseline; gap:8px; margin-bottom:9px;}
+  .teaching-role{font-weight:600; font-size:16px; color:var(--navy);}
+  .teaching-org{font-size:14px; color:var(--muted);}
+  .course-row{display:grid; grid-template-columns:minmax(0,1fr) auto; gap:24px; padding:8px 0 8px 18px; border-bottom:1px solid var(--rule);}
+  .course-row:last-child{border-bottom:0;}
+  .course-name{font-size:14.5px; color:#3A3D42;}
+  .course-date{font-family:var(--mono); font-size:12.5px; color:var(--teal); text-align:right; white-space:nowrap;}
 
-  .stat-row{display:flex; gap:28px; margin-top:10px; flex-wrap:wrap;}
-  .stat{font-family:var(--mono); font-size:12.5px; color:var(--muted);}
-  .stat strong{color:var(--navy); font-size:14px;}
-
-  .course-list{display:flex; flex-wrap:wrap; gap:8px; margin-top:6px;}
-  .course-tag{font-family:var(--mono); font-size:12.5px; padding:5px 10px; border:1px solid var(--rule); border-radius:3px; background:#FCFBF8;}
-
-  @media (max-width:560px){.job{grid-template-columns:1fr;}}
+  @media (max-width:560px){
+    .teaching-heading{display:block;}
+    .teaching-org{margin-top:2px;}
+    .course-row{grid-template-columns:1fr; gap:3px; padding-left:0;}
+    .course-date{text-align:left; white-space:normal;}
+  }
 </style>
 </head>
 <body>
@@ -47,43 +47,64 @@
   <header class="page-header">
     <div class="eyebrow">Teaching</div>
     <h1>Teaching Experience</h1>
-    <p class="page-intro">I've taught and supported courses in macroeconomics, statistics, and econometrics at Boston College since 2019.</p>
+    <p class="page-intro">Courses taught and supported at Boston College and IGIDR.</p>
   </header>
 
-  <section id="teaching-fellow">
-    <div class="label">Teaching Fellow (Lecturer)</div>
-    <div class="job">
-      <div class="job-date">2024–Present</div>
-      <div>
-        <div class="job-title">Undergraduate Macroeconomic Theory</div>
-        <div class="job-org">Boston College</div>
-        <ul>
-          <li>Designed and led multiple sections for 50+ students</li>
-        </ul>
-        <div class="stat-row">
-          <div class="stat">Course rating <strong>4.33/5</strong> (dept. avg. 4.19)</div>
-          <div class="stat">Instructor rating <strong>4.64/5</strong> (dept. avg. 4.41)</div>
-        </div>
+  <section id="teaching-experience">
+    <div class="teaching-group">
+      <div class="teaching-heading">
+        <span class="teaching-role">Teaching Fellow (Lecturer)</span>
+        <span class="teaching-org">Boston College</span>
+      </div>
+      <div class="course-row">
+        <span class="course-name">Macroeconomic Theory</span>
+        <span class="course-date">Fall 2024</span>
+      </div>
+      <div class="course-row">
+        <span class="course-name">Macroeconomic Theory</span>
+        <span class="course-date">Summer I 2025; Summer II 2025</span>
       </div>
     </div>
-  </section>
 
-  <section id="ta">
-    <div class="label">Teaching Assistant</div>
-    <div class="job">
-      <div class="job-date">2019–2024</div>
-      <div>
-        <div class="job-title">Discussion Sections &amp; Office Hours</div>
-        <div class="job-org">Boston College</div>
-        <ul>
-          <li>Led discussion sessions, held office hours, graded exams and assignments, and provided solutions and explanations across the courses below</li>
-        </ul>
-        <div class="course-list">
-          <span class="course-tag">Statistics</span>
-          <span class="course-tag">Econometrics</span>
-          <span class="course-tag">Time Series with Python</span>
-          <span class="course-tag">Principles of Economics</span>
-        </div>
+    <div class="teaching-group">
+      <div class="teaching-heading">
+        <span class="teaching-role">Teaching Assistant</span>
+        <span class="teaching-org">Boston College</span>
+      </div>
+      <div class="course-row">
+        <span class="course-name">Principles of Macroeconomics</span>
+        <span class="course-date">Fall 2019</span>
+      </div>
+      <div class="course-row">
+        <span class="course-name">International Finance</span>
+        <span class="course-date">Spring 2020; Fall 2023</span>
+      </div>
+      <div class="course-row">
+        <span class="course-name">Principles of Economics</span>
+        <span class="course-date">Fall 2022</span>
+      </div>
+      <div class="course-row">
+        <span class="course-name">Statistics</span>
+        <span class="course-date">Spring 2022, 2023, and 2024</span>
+      </div>
+      <div class="course-row">
+        <span class="course-name">Econometric Methods</span>
+        <span class="course-date">Fall 2026</span>
+      </div>
+    </div>
+
+    <div class="teaching-group">
+      <div class="teaching-heading">
+        <span class="teaching-role">Teaching Assistant</span>
+        <span class="teaching-org">IGIDR</span>
+      </div>
+      <div class="course-row">
+        <span class="course-name">Microeconomic Theory</span>
+        <span class="course-date">Fall 2018</span>
+      </div>
+      <div class="course-row">
+        <span class="course-name">Game Theory</span>
+        <span class="course-date">Spring 2019</span>
       </div>
     </div>
   </section>
